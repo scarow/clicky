@@ -1,0 +1,21 @@
+.jumbotron {
+    justify-content: center;
+    background-color: #B0E0E6;
+
+
+}
+.container {
+    /* display: flex; */
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 50px !important;
+}
+
+.btn{
+    width: 200px;
+    height: 100px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 30px;
+}

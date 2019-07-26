@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "name": "Apple",
+    "image": "images/apple.png"
+  },
+  {
+    "id": "2",
+    "name": "Avocado",
+    "image": "images/avocado.png"
+  },
+  {
+    "id": "3",
+    "name": "Banana",
+    "image": "images/banana.png"
+  },
+  {
+    "id": "4",
+    "name": "Blueberries",
+    "image": "images/blueberries.png"
+  },
+  {
+    "id": "5",
+    "name": "Cherries",
+    "image": "images/cherries.png"
+  },
+  {
+    "id": "6",
+    "name": "Grapes",
+    "image": "images/grapes.png"
+  },
+  {
+    "id": "7",
+    "name": "Orange",
+    "image": "images/orange.png"
+  },
+  {
+    "id": "8",
+    "name": "Pineapple",
+    "image": "images/pineapple.png"
+  },
+  {
+    "id": "9",
+    "name": "Pomegranate",
+    "image": "images/pomegranate.png"
+  },  
+  {
+    "id": "10",
+    "name": "Raspberry",
+    "image": "images/raspberry.png"
+  },
+  {
+    "id": "11",
+    "name": "Strawberry",
+    "image": "images/strawberry.png"
+  },
+  {
+    "id": "12",
+    "name": "Watermelon",
+    "image": "images/watermelon.png"
+  }
+]

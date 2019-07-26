@@ -1,6 +1,6 @@
 {
-  "name": "clicky-fruits",
-  "homepage": "https://meghabprasad/github.io/clicky-fruits",
+  "name": "clicky",
+  "homepage": "https://meghabprasad/github.io/clicky",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,6 +10,8 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
