@@ -13,7 +13,8 @@ How to play:
 
 Game functionality:
 
-    With every selection, the grid of fruits is reshuffled and current number of fruits clicked updates. When the same fruit is clicked more than once, the top score is updated and the game is reset.
+    With every selection, the grid of fruits is reshuffled and current number of fruits clicked updates.
+    When the same fruit is clicked more than once, the top score is updated and the game is reset.
 
 Tech Used:
 
