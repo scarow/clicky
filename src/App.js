@@ -23,22 +23,28 @@ class App extends Component {
   handleClick = (id, name) => {
 
     //check to see if they have clicked this card. 
-      let clickedIdCopy = this.state.clickedId;
-      console.log(clickedIdCopy);
+    let clickedIdCopy = this.state.clickedId; // fix indentation in this file to match up with this line
+      console.log(clickedIdCopy); // remove console.log
 
       if (clickedIdCopy.includes(id)){
         //If they have clicked, send message
         this.setState({ message: `You already clicked ${name}. You lose`});
         let tempCount = this.state.count;
         this.setState({ topScore: tempCount});
-        this.setState({ count: 0 })
+        this.setState({ count: 0 }) // you can set state all at once like this:
+        /*
+        this.setState({
+          count: 0,
+          topScore: tempCount,
+          message: ... blah blah
+        });  
+        */
         clickedIdCopy = [];
-        this.setState({ clickedId : clickedIdCopy });
-        let shuffledFruits = this.state.fruits.sort(() => Math.random() - 0.5);
+        this.setState({ clickedId : clickedIdCopy }); // move into set state
+        let shuffledFruits = this.state.fruits.sort(() => Math.random() - 0.5); // move all variables up to top of if statement and then setState afterwards
         this.setState({ shuffledFruits });
       } 
-        //else add the id of the card to the clickedId array
-
+      //else add the id of the card to the clickedId array
       else {
         const newClicked = this.state.clickedId;
         newClicked.push(id);
@@ -50,7 +56,7 @@ class App extends Component {
         this.setState({ shuffledFruits });
       }
 
-      if (clickedIdCopy.length === 12){
+      if (clickedIdCopy.length === 12){ // move 12 to variable
         this.setState({ message: `You Won! Click any fruit to play again!`});
         let tempCount = this.state.count + 1;
         this.setState({ topScore: tempCount});
@@ -58,7 +64,7 @@ class App extends Component {
         clickedIdCopy = [];
         this.setState({ clickedId : clickedIdCopy });
         let shuffledFruits = this.state.fruits.sort(() => Math.random() - 0.5);
-        this.setState({ shuffledFruits });
+        this.setState({ shuffledFruits }); // same thing with setState({}) -- move everything into one setState func
       }
   }
 
@@ -71,7 +77,7 @@ class App extends Component {
       <Wrapper showGame = {this.state.showGame}>
         {/* <h1>{this.state.message}</h1>
         <h1>Current Count: {this.state.count}</h1>
-        <h1>Top Score: {this.state.topScore}</h1> */}
+        <h1>Top Score: {this.state.topScore}</h1> */} // remove this comment
         {this.state.fruits.map(fruit => (
           <FruitCard
             handleClick={this.handleClick}
